@@ -6,7 +6,7 @@ applications:
     memory: 1024M
     domain: 
     path: 
-    buildpack: 
+    env: 
       SPRING_PROFILES_ACTIVE: cloud
       DEBUG: "true"
     services:
