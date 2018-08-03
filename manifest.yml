@@ -1,9 +1,14 @@
 ---
 applications:
-- name: github-webhook
-  services:
-    - github-rabbitmq
-    - github-eureka
-  env:
-    SPRING_PROFILES_ACTIVE: cloud
-    DEBUG: "true"
+  - name: github-webhook
+    instances: 1
+    disk_quota: 1024M
+    memory: 1024M
+    domain: 
+    path: 
+    buildpack: 
+      SPRING_PROFILES_ACTIVE: cloud
+      DEBUG: "true"
+    services:
+      - github-rabbitmq
+      - github-eureka
