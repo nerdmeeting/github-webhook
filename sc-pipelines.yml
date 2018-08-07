@@ -27,3 +27,6 @@ stage:
       type: app
       coordinates: com.example.eureka:github-eureka:0.0.1.M1
       pathToManifest: sc-pipelines/manifest-eureka.yml
+
+prod:
+  deployment_strategy: "Red/Black"
