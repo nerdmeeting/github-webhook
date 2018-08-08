@@ -29,4 +29,4 @@ stage:
       pathToManifest: sc-pipelines/manifest-eureka.yml
 
 prod:
-  deployment_strategy: "Red/Black"
+  deployment_strategy: redblack
